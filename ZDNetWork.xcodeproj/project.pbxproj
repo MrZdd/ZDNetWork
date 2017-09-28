@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E261BD71E1517894CC6A362 /* libPods-ZDNetWork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E281B072DDDF27346ECC407 /* libPods-ZDNetWork.a */; };
 		FAB0C8261F7CD2C800535912 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB0C8251F7CD2C800535912 /* AppDelegate.m */; };
 		FAB0C8291F7CD2C800535912 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB0C8281F7CD2C800535912 /* ViewController.m */; };
 		FAB0C82C1F7CD2C800535912 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB0C82A1F7CD2C800535912 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 		FAB0C8371F7CD2C800535912 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB0C8361F7CD2C800535912 /* main.m */; };
 		FAB0C8411F7CD2C800535912 /* ZDNetWorkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB0C8401F7CD2C800535912 /* ZDNetWorkTests.m */; };
 		FAB0C84C1F7CD2C800535912 /* ZDNetWorkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB0C84B1F7CD2C800535912 /* ZDNetWorkUITests.m */; };
+		FAB0C85C1F7CD34000535912 /* NJAFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB0C85B1F7CD34000535912 /* NJAFNetworking.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1601B7E259C79CD7A30A0A96 /* Pods-ZDNetWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZDNetWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZDNetWork/Pods-ZDNetWork.release.xcconfig"; sourceTree = "<group>"; };
+		2E281B072DDDF27346ECC407 /* libPods-ZDNetWork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZDNetWork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D446C086ECFEE8A301DA5C7 /* Pods-ZDNetWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZDNetWork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZDNetWork/Pods-ZDNetWork.debug.xcconfig"; sourceTree = "<group>"; };
 		FAB0C8211F7CD2C800535912 /* ZDNetWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZDNetWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB0C8241F7CD2C800535912 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FAB0C8251F7CD2C800535912 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -53,6 +58,8 @@
 		FAB0C8471F7CD2C800535912 /* ZDNetWorkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZDNetWorkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB0C84B1F7CD2C800535912 /* ZDNetWorkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZDNetWorkUITests.m; sourceTree = "<group>"; };
 		FAB0C84D1F7CD2C800535912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAB0C85A1F7CD34000535912 /* NJAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJAFNetworking.h; sourceTree = "<group>"; };
+		FAB0C85B1F7CD34000535912 /* NJAFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJAFNetworking.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E261BD71E1517894CC6A362 /* libPods-ZDNetWork.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,13 +88,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10DED90613471601F2F004B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E281B072DDDF27346ECC407 /* libPods-ZDNetWork.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		85BDB7F84A15FA2CA2EC8EA7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D446C086ECFEE8A301DA5C7 /* Pods-ZDNetWork.debug.xcconfig */,
+				1601B7E259C79CD7A30A0A96 /* Pods-ZDNetWork.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FAB0C8181F7CD2C700535912 = {
 			isa = PBXGroup;
 			children = (
+				FAB0C8591F7CD34000535912 /* ZDNetWorkIng */,
 				FAB0C8231F7CD2C800535912 /* ZDNetWork */,
 				FAB0C83F1F7CD2C800535912 /* ZDNetWorkTests */,
 				FAB0C84A1F7CD2C800535912 /* ZDNetWorkUITests */,
 				FAB0C8221F7CD2C800535912 /* Products */,
+				85BDB7F84A15FA2CA2EC8EA7 /* Pods */,
+				10DED90613471601F2F004B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +163,15 @@
 			path = ZDNetWorkUITests;
 			sourceTree = "<group>";
 		};
+		FAB0C8591F7CD34000535912 /* ZDNetWorkIng */ = {
+			isa = PBXGroup;
+			children = (
+				FAB0C85A1F7CD34000535912 /* NJAFNetworking.h */,
+				FAB0C85B1F7CD34000535912 /* NJAFNetworking.m */,
+			);
+			path = ZDNetWorkIng;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAB0C8501F7CD2C800535912 /* Build configuration list for PBXNativeTarget "ZDNetWork" */;
 			buildPhases = (
+				33ED483D9DDD1BB2952BA318 /* [CP] Check Pods Manifest.lock */,
 				FAB0C81D1F7CD2C800535912 /* Sources */,
 				FAB0C81E1F7CD2C800535912 /* Frameworks */,
 				FAB0C81F1F7CD2C800535912 /* Resources */,
+				705367AC37167C13CF4979D4 /* [CP] Embed Pods Frameworks */,
+				87A98DBE4F505D369F0FCF16 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -263,6 +303,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		33ED483D9DDD1BB2952BA318 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZDNetWork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		705367AC37167C13CF4979D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZDNetWork/Pods-ZDNetWork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87A98DBE4F505D369F0FCF16 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZDNetWork/Pods-ZDNetWork-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FAB0C81D1F7CD2C800535912 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -272,6 +363,7 @@
 				FAB0C82F1F7CD2C800535912 /* ZDNetWork.xcdatamodeld in Sources */,
 				FAB0C8371F7CD2C800535912 /* main.m in Sources */,
 				FAB0C8261F7CD2C800535912 /* AppDelegate.m in Sources */,
+				FAB0C85C1F7CD34000535912 /* NJAFNetworking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,11 +524,13 @@
 		};
 		FAB0C8511F7CD2C800535912 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D446C086ECFEE8A301DA5C7 /* Pods-ZDNetWork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P652TXPU8G;
 				INFOPLIST_FILE = ZDNetWork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZDD.ZDNetWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -446,11 +540,13 @@
 		};
 		FAB0C8521F7CD2C800535912 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1601B7E259C79CD7A30A0A96 /* Pods-ZDNetWork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P652TXPU8G;
 				INFOPLIST_FILE = ZDNetWork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZDD.ZDNetWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
